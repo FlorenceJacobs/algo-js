@@ -1,18 +1,23 @@
 const readlineSync = require("readline-sync");
-/*
-let daysArray = ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"];
-let i = new Number(readlineSync.question ("Please, enter a number from 1 to 7: "));
-console.log("The day you've choose is " + daysArray[i-=1]);
-*/
 
-let daysArray = ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"];
+let daysArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let i = new Number(readlineSync.question ("Please, enter a number from 1 to 7: "));
+console.log("The day you've choose is " + daysArray[i-1]);
+
+/*
+let daysArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 let i = 0
 
-i = new Number(readlineSync.question ("Please, enter a number from 1 to 7: "));
-
-switch (new Number) {
+while (i<1 || 7<i) {
+    i = new Number(readlineSync.question ("Please, enter a number from 1 to 7: "));
+    if (i<1 || 7<i) {
+        console.log("Did you really undertood? Read once more the instructions");
+    }
+    else {break;}
+}
+switch (i) {
     case 1:
-    console.log("Monday" + " is the first day of the week.");
+    console.log(daysArray[0]);
     break;
     case 2:
     console.log(daysArray[1]);
@@ -32,6 +37,7 @@ switch (new Number) {
     case 7:
     console.log(daysArray[6]);
     break;
-  default:
+    default:
     console.log("Sorry, you don't understand anything");
 }
+*/
