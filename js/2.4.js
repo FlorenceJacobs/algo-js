@@ -1,2 +1,21 @@
-Display all even numbers between 1 and 100.
-The first one should use while and make a loop that will execute 100 times. The second one should use for and make a loop that will execute 50 times.
+const readlineSync = require("readline-sync");
+
+/*WHILE
+let i = 1
+    while (i<=100) {
+        if (i%2===0) {
+            console.log(i+"/2= " + i/2);
+        }
+        else {
+            console.log(i+"*3= " + i*3);
+        }
+        i++;
+    }
+*/
+
+for (let i = 2; i <=100; i+=2) {
+    console.log(i/2);
+}
+for (let i = 1; i <= 100; i+=2) {
+    console.log(i*3);
+}
