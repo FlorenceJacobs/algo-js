@@ -1,0 +1,1 @@
+Write a program that will display the minimum and maximum elements of a given array.

@@ -10,6 +10,7 @@ let i = 0
 
 while (i<1 || 7<i) {
     i = new Number(readlineSync.question ("Please, enter a number from 1 to 7: "));
+    i = parseInt(i);
     if (i<1 || 7<i) {
         console.log("Did you really undertood? Read once more the instructions");
     }
