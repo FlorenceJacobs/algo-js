@@ -6,7 +6,7 @@ function getRandomInt(max) {
 
 const readlineSync = require("readline-sync");
 
-function rand10(n) {
+function rand10() {
     return Math.floor(Math.random()*11);
 }
 console.log(rand10());
