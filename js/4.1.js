@@ -21,4 +21,4 @@ let userWidth = new Number(readlineSync.question ("Please, enter the width of a 
 let calcSurface = (userLenght, userWidth) => {
     return userLenght*userWidth;
 }
-console.log("The surface of the reclangle is "+calcSurface(userLenght, userWidth))
+console.log("The surface of the reclangle is "+calcSurface(userLenght, userWidth));
