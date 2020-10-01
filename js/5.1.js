@@ -9,25 +9,19 @@ Create a program that use that function to generate a TV serie object and displa
 */
 const readlineSync = require("readline-sync");
 
-let serie = {
-    name : readlineSync.question ("Please, enter the name of your favorite TV serie : "),
-    year : readlineSync.question ("Could you please enter the production year : "),
-    cast : function completeCast(c) {
-        let cast = [];
-        c = readlineSync.question ("Could you please enter the name of the first cast members : ");
-        cast.push(c);
-        let d = y;
-        while (d==y) {
-            d = readlineSync.question ("Would do you add one more name of the cast members? y/n");
-            let e = readlineSync.question ("The name of cast members is: ");
-            cast.push(e);
-        }
-        return cast;
-    }
-    askTvSerie : function () {
-            return "Your favorite TV serie is "+this.name+", producted in "+this.year+" with "+this.cast+".";
-        
-    }
+function askTvSerie() {
+    let d;
+    let serie = {};
+        serie.name = readlineSync.question ("Please, enter the name of your favorite TV serie : ");
+        serie.year = readlineSync.question ("What's the production year : ");
+        serie.cast = [];
+            do {
+                let c = readlineSync.question ("Could you please enter the name of the one cast member : ");
+                serie.cast.push(c);
+                d = readlineSync.question ("Would do you add one more name of the cast members? y/n : ");
+            }
+            while (d =="y") {};
+            return serie;
 }
 
-console.log(serie.askTvSerie())
+console.log(JSON.stringify(askTvSerie()));
