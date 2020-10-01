@@ -17,7 +17,7 @@ let sum=0;
 let average = 0;
 
 for (let i=0; i<array2.length; i++) {
-    sum+=array2[i];
+    sum+=parseInt(array2[i]);
 }
 let average = sum/array2.length;
 console.log("The average of the sum of the elements of the array is "+average);
